@@ -1,0 +1,25 @@
+@use "sass:map";
+@import '@/assets/styles/colors';
+
+.container {
+  border-radius: 5px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid map.get($colors, grey-200);
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.btn--clicked {
+  background-color: map.get($colors, grey-100);
+}

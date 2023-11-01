@@ -1,0 +1,21 @@
+@use "sass:map";
+@import '@/assets/styles/colors';
+
+.nav {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: map.get($colors, red);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.right {
+  color: map.get($colors, grey-400);
+  font-size: 16px;
+  font-weight: 400;
+}

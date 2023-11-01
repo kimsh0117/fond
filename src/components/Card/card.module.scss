@@ -1,0 +1,49 @@
+@use "sass:map";
+@import '@/assets/styles/colors';
+
+.card {
+  display: flex;
+  gap: 62px;
+}
+
+.card__image {
+  width: 424px;
+  height: 262px;
+  border: 1px solid map.get($colors, grey-200);
+  flex-shrink: 0;
+}
+
+.card__information {}
+
+.name {
+  color: map.get($colors, black);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.personal {
+  margin-top: 10px;
+}
+
+.strong {
+  color: map.get($colors, grey-400);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.text {
+  color: map.get($colors, grey-300);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.about {
+  margin-top: 20px;
+  color: map.get($colors, grey-400);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+}

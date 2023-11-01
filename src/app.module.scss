@@ -1,0 +1,31 @@
+@use "sass:map";
+@import '@/assets/styles/colors';
+
+.wrapper {
+  background-color: map.get($colors, white);
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  margin-top: 26px;
+  border-radius: 10px;
+  background-color: map.get($colors, white-100);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+  display: flex;
+  flex-grow: 1;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid map.get($colors, grey-200);
+  width: 291px;
+}

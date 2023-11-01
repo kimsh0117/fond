@@ -1,0 +1,44 @@
+@use "sass:map";
+@import '@/assets/styles/colors';
+
+.input {
+  border-radius: 8px;
+  border: 1.5px solid map.get($colors, grey-100);
+  background: map.get($colors, white);
+  width: 100%;
+  height: 46px;
+  padding: 16px;
+
+  color: map.get($colors, grey-300);
+  font-size: 14px;
+  font-weight: 400;
+
+  margin-top: 22px;
+  margin-bottom: 22px;
+
+  &:focus,
+  &:active {
+    border: 1px solid map.get($colors, grey-300);
+  }
+}
+
+.input--error {
+  border: 1px solid map.get($colors, red);
+
+  .input:focus,
+  .input:active {
+    border: 1px solid map.get($colors, red);
+  }
+}
+
+.input--disable {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.label {
+  color: map.get($colors, grey-400);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+}

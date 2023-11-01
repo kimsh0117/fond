@@ -1,0 +1,26 @@
+@use "sass:map";
+@import '@/assets/styles/colors';
+
+.label {
+  color: map.get($colors, grey-400);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.text {
+  color: map.get($colors, grey-300);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.list {
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
